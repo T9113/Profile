@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+
+  <link rel="shortcut icon" type="image/icon" href="assets/portfolio.png" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0"
+  style="background-image: url(assets/bg.jpg);background-repeat: no-repeat;background-size: cover; ">
+
+  <!-- Header Section -->
+  <header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark colorful-nav fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-house-fill"></i> Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="bi bi-person-fill"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><i class="bi bi-gear-fill"></i> Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-layers-fill"></i> Projects
+              </a>
+              <ul class="dropdown-menu rounded" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item nav-link" style="color: red;" href="#projects"><i
+                      class="bi bi-tv"></i>&nbsp; Netflix</a></li>
+                <li><a class="dropdown-item nav-link" href="#projects" style="color: skyblue;"><i
+                      class="bi bi-cpu-fill"></i>&nbsp; IBM</a></li>
+                <li><a class="dropdown-item nav-link" href="#projects" style="color: rgb(0, 0, 0);"><i
+                      class="bi bi-person-lines-fill"></i>&nbsp;Portfolio</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item active nav-link" href="#" style="color: rgb(18, 0, 157);"><i
+                      class="bi bi-bell-fill"></i>&nbsp;Coming Soon</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <section id="home" class="container-fluid text-center py-5" style="background-image: url(assets/home.jpg);">
+    <div class="container ">
+      <h1 class="w3-animate-right" style="animation-duration:1s ;">Welcome to My Portfolio </h1>
+      <h2><span class="w3-animate-right" style="animation-duration:1.5s ;">I am</span>
+        <p class="w3-animate-zoom" style="animation-duration:2.5s ;">Tayyab Masood</p>
+      </h2>
+      <p class="lead w3-animate-bottom" style="animation-duration:3.5s ;">Discover my skills, projects, and
+        journey.</p>
+      <a  href="#about" class="btn btn-light btn-lg mt-3" style="animation-duration: 3.8s; font-weight: bold;">Learn more <br>
+        <span id="animated-text" style="color: #66FF00;">About me</span>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- About Me Section -->
+  <section id="about" class="container  my-5">
+    <div class="text-center ">
+      <div>
+        <h2 class="skill-heading">About Me</h2>
+      </div>
+      <img src="assets/logo.jpg" alt="Profile Picture" class="rounded-circle mb-3 profile-pic about-me-img"
+        style="border-radius: 50px; ">
+      <div class="alert alert-dark p-3 box" style="background-image: url(assets/bgpaper.jpg);">
+
+        <button id="myButton" class="btn unlock" onclick="typeWriter()">
+          <h4>Unlock My Story with a Click!</h4>
+        </button>
+        <p id="demo" class="fs-4 "
+          style=" color:#0a1148;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+
+
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section (styled like project cards) -->
+  <section id="skills" class="container my-5 ">
+    <div class="section-heading text-center  ">
+      <h2 class="skill-heading">Skills</h2>
+    </div>
+    <div class="row">
+      <div id="s1" class="col-md-4" style="animation-duration: 2s">
+        <div class="card text-center p-3 " style="background-image: url(assets/bg.jpg);">
+          <div class="progress green">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+          <h5 class="card-title" style="padding-top: 9px;">HTML</h5>
+
+        </div>
+      </div>
+      <div id="s2" class="col-md-4" style="animation-duration: 3s">
+        <div class="card text-center p-3" style="background-image: url(assets/bg.jpg);">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">95%</div>
+          </div>
+          <h5 class="card-title" style="padding-top: 9px;">CSS</h5>
+        </div>
+      </div>
+      <div id="s3" class="col-md-4" style="animation-duration: 4s">
+        <div class="card text-center p-3" style="background-image: url(assets/bg.jpg);">
+          <div class="progress yellow">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">75%</div>
+          </div>
+          <h5 class="card-title" style="padding-top: 9px;">JavaScript</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with hover effect -->
+  <section id="projects" class="container my-5">
+    <div class="section-heading text-center">
+      <h2 class="skill-heading">Projects</h2>
+    </div>
+
+
+    <div class="row">
+      <div id="p1" class="col-md-4" style="animation-duration: 2s">
+        <div class="card project-card">
+          <div class="card-front">
+            <img src="assets/p3.jpg" class="card-img-top" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title ">
+                <h3 style="color:red ; padding:3px"><strong>Netflix</strong></h3>
+              </h5>
+              <p class="card-text">A Netflix clone using HTML, CSS, and JavaScript.Stream your favorite
+                shows and movies seamlessly with our Netflix-inspired clone!</p>
+
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="container">
+              <h2>Netflix</h2>
+              <p>Clone</p>
+              <button><a href="assets/Netflix-Clone/index.html">View Project</a></button>
+              <br><br>
+              <p>Share</p>
+              <div class="social-icons">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i
+                        class="bi bi-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="p2" class="col-md-4" style="animation-duration: 3s">
+        <div class="card project-card">
+          <div class="card-front">
+            <img src="assets/ibm.webp" class="card-img-top" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title ">
+                <h3 style="color:skyblue;"><strong>IBM</strong></h3>
+              </h5>
+              <p class="card-text">A IBM-Clone using HTML, CSS, and JavaScript.Experience cutting-edge
+                technology and innovation with our IBM-inspired platform clone!</p>
+
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="container">
+              <h2><strong>IBM</strong></h2>
+              <p>Clone</p>
+              <button><a href="assets/IBM-Clone/index.html">View Project</a></button>
+              <br><br>
+              <p>Share</p>
+              <div class="social-icons">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i
+                        class="bi bi-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="p3" class="col-md-4" style="animation-duration: 4s">
+        <div class="card project-card">
+          <div class="card-front">
+            <img src="assets/portfolio.jpg" class="card-img-top" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title ">
+                <h3><strong>Portfolio</strong></h3>
+              </h5>
+              <p class="card-text">A Portfolio using HTML, CSS, and JavaScript.An interactive portfolio
+                showcasing my skills, projects, and expertise
+                through modern design.</p>
+
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="container">
+              <h2><strong>Portfolio</strong></h2>
+              <p>Clone</p>
+              <button><a href="assets/portfolio/index.html">View Project</a></button>
+              <br><br>
+              <p>Share</p>
+              <div class="social-icons">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+                  </li>
+                  <li class="list-inline-item"><a href="#" class="footer-social-link"><i
+                        class="bi bi-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <!-- contact start -->
+
+  <section id="contact" class="contact">
+    <div class="section-heading text-center">
+      <h2 class="skill-heading">Contact</h2>
+    </div>
+    <div class="container">
+      <div class="contact-content">
+        <div class="row">
+          <!-- Contact Form Section -->
+          <div class="col-lg-5 col-md-6 offset-md-1">
+            <div class="single-contact-box">
+              <div class="contact-form">
+                <!-- Form -->
+                <form id="contactForm">
+                  <div class="row">
+                    <div id="c1" class="col-6" style="animation-duration:1s;">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name*" name="name" required>
+                      </div>
+                    </div>
+                    <div id="c2" class="col-6" style="animation-duration:1.5s;">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email*" name="email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div id="c3" class="col-12" style="animation-duration:1.9s;">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject"
+                          required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div id="c4" class="col-12" style="animation-duration:2.2s;">
+                      <div class="form-group">
+                        <textarea class="form-control" rows="6" id="comment" placeholder="Message" name="message"
+                          required></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div id="c5" class="col-12" style="animation-duration:2.4s;">
+                      <button type="submit" class="btn btn-primary w-100" style="border-radius: 25px;">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information Section -->
+          <div id="c6" class="col-lg-5 col-md-6 offset-lg-1 ps-3 rounded-pill text-center "
+            style="animation-duration:3.5s ; background-color:aliceblue; margin-top: 20px;">
+            <div class="single-contact-box">
+              <div class="contact-address ">
+                <div class="contact-add-head">
+                  <h3>Tayyab Masood</h3>
+                  <p>Network Designing and Configuration <br> Website Design and Development</p>
+                </div>
+                <div class="contact-add-info">
+                  <div class="single-contact-add-info">
+                    <h3>Phone</h3>
+                    <p>0348-4040715</p>
+                  </div>
+                  <div class="single-contact-add-info">
+                    <h3>Email</h3>
+                    <p>tayyabmasood911@gmail.com</p>
+                  </div>
+                  <div class="single-contact-add-info">
+                    <h3>Website</h3>
+                    <p>www.tayyabmasood.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact end -->
+  <!-- Bootstrap Modal for Thank You Message -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title rounded-pill" id="thankYouModalLabel" style="background-color: #0a1148; color:white">
+            &nbsp;Thank You&nbsp;</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>Thank you for contacting us! We'll get back to you soon.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer-section pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Me Section -->
+        <div id="f1" class="col-md-4" style="animation-duration:1.3s ;">
+          <div>
+            <h5 class="text-uppercase text-mint">&nbsp; About Me</h5>
+          </div>
+
+          <div class="aboutme">
+            <p class="p-2 ">
+              I am Tayyab Masood, a Network Designer and Web Developer with a passion for creating
+              innovative
+              and effective digital solutions. From network configuration to web development, I bring
+              expertise and creativity to every project.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Quick Links Section -->
+        <div id="f2" class="col-md-4 ps-5" style="animation-duration:1.9s ;">
+          <h5 class="text-uppercase text-mint">Quick Links</h5>
+          <ul class="list-unstyled ">
+            <li><i class="bi bi-house-fill"></i>&nbsp;<a href="#home" class="footer-link">Home</a></li>
+            <li><i class="bi bi-person-fill"></i>&nbsp;<a href="#about" class="footer-link">About Me</a>
+            </li>
+            <li><i class="bi bi-gear-fill"></i>&nbsp;<a href="#skills" class="footer-link">Skills</a>
+            </li>
+            <li><i class="bi bi-layers-fill"></i>&nbsp;<a href="#projects" class="footer-link">Projects</a>
+            </li>
+            <li><i class="bi bi-envelope-fill"></i>&nbsp;<a href="#contact" class="footer-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Connect with Me Section -->
+        <div id="f3" class="col-md-4 " style="animation-duration:2.3s ;">
+          <h5 class="text-uppercase text-mint">Connect with Me</h5>
+          <div class="social-icons">
+            <ul class="list-inline ">
+              <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="#" class="footer-social-link"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="scroll-Top">
+        <div class="return-to-top">
+          <i class="bi bi-arrow-up-short" id="scroll-top"></i>
+        </div>
+
+      </div><!--/.scroll-Top-->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2024 Tayyab Masood. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <script type="text/Javascript" src="JS/java.js"></script>
+</body>
+
+</html>
